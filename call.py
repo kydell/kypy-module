@@ -39,14 +39,14 @@ def pickit():
     choice = input("To define, press '1'.\nTo thesaur, press '2'.\nyour selection: ")
     if choice == "1":
         word = input("Pick a word to define: ")
-        wordDef(word)
+        answer = wordDef(word)
     elif choice == "2":
         word = input("Pick a word to thesaur: ")
-        wordThes(word)
+        answer = wordThes(word)
     else:
         print("You chose not a choice. :-(\nQuitting...")
         quit()
-
+    return answer
 
 
 if __name__ == "__main__":
